@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>buttons</title>
+    <style type="text/css">
+    
+#square {
+    width: 650px;
+    height: 650px;
+    
+    position: absolute;
+    left: 27%;
+}
+
+    #one {
+    	background-color:crimson;
+    }
+
+    #two {
+    	background-color:hotpink;
+    }
+
+    #three {
+    	background-color:gold;
+    }
+
+    #four {
+        background-color:darkorchid;
+    }
+
+    #five {
+        background-color:lightslategrey;
+    }
+
+    #six {
+        background-color:orange;
+    }
+    
+    #seven {
+        background-color:darkturquoise;
+    }
+
+    #eight {
+        background-color:lightskyblue;
+    }
+
+    #nine {
+        background-color:lightgreen;
+    }
+    
+
+    .cs {
+        width: 200px;
+        height: 200px;
+        border-radius:50%;
+        display: inline-block;
+
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div id="square">
+    <div class="cs" id="one"></div>
+    <div class="cs" id="two"></div>
+    <div class="cs" id="three"></div>
+    <div class="cs" id="four"></div>
+    <div class="cs" id="five"></div>
+    <div class="cs" id="six"></div>
+    <div class="cs" id="seven"></div>
+    <div class="cs" id="eight"></div>
+    <div class="cs" id="nine"></div>
+    </div>
+
+    <script type="text/javascript">
+    
+    	
+    var one1 = document.getElementById("one");
+
+    one1.addEventListener("click", function(){
+    	console.log("Stop");
+        one1.style.backgroundColor = "lightgreen"
+    } )
+    one1.addEventListener("mouseover", function(){
+        one1.style.backgroundColor = "crimson"
+    })
+
+//--------------------------------------------
+
+    var two2 = document.getElementById("two");
+
+    two2.addEventListener("click", function(){
+        console.log("Slow");
+        two2.style.backgroundColor = "lightskyblue"
+    } )
+    two2.addEventListener("mouseover", function(){
+        two2.style.backgroundColor = "hotpink"
+    })
+
+//--------------------------------------------
+
+    var three3 = document.getElementById("three");
+
+    three3.addEventListener("click", function(){
+        console.log("Go");
+        three3.style.backgroundColor = "darkturquoise"
+    } )
+    three3.addEventListener("mouseover", function(){
+        three3.style.backgroundColor = "gold"
+    })
+
+//--------------------------------------------
+
+    var four4 = document.getElementById("four");
+
+    four4.addEventListener("click", function(){
+        console.log("Stop");
+        four4.style.backgroundColor = "orange"
+    } )
+    four4.addEventListener("mouseover", function(){
+        four4.style.backgroundColor = "darkorchid"
+    })
+
+//--------------------------------------------
+
+    var five5 = document.getElementById("five");
+
+    five5.addEventListener("click", function(){
+        console.log("Slow");
+        five5.style.backgroundColor = "lightgrey"
+    } )
+    five5.addEventListener("mouseover", function(){
+        five5.style.backgroundColor = "lightslategrey"
+    })
+
+//--------------------------------------------
+
+    var six6 = document.getElementById("six");
+
+    six6.addEventListener("click", function(){
+        console.log("Go");
+        six6.style.backgroundColor = "darkorchid"
+    } )
+    six6.addEventListener("mouseover", function(){
+        six6.style.backgroundColor = "orange"
+    })
+
+//--------------------------------------------
+
+    var seven7 = document.getElementById("seven");
+
+    seven7.addEventListener("click", function(){
+        console.log("Stop");
+        seven7.style.backgroundColor = "gold"
+    } )
+    seven7.addEventListener("mouseover", function(){
+        seven7.style.backgroundColor = "darkturquoise"
+    })
+
+//--------------------------------------------
+
+    var eight8 = document.getElementById("eight");
+
+    eight8.addEventListener("click", function(){
+        console.log("Slow");
+        eight8.style.backgroundColor = "hotpink"
+    } )
+    eight8.addEventListener("mouseover", function(){
+        eight8.style.backgroundColor = "lightskyblue"
+    })
+
+//--------------------------------------------
+
+    var nine9 = document.getElementById("nine");
+
+    nine9.addEventListener("click", function(){
+        console.log("Go");
+        nine9.style.backgroundColor = "crimson"
+    } )
+    nine9.addEventListener("mouseover", function(){
+        nine9.style.backgroundColor = "lightgreen"
+    })
+
+//--------------------------------------------
+
+
+    </script>
+</body>
+
+</html>

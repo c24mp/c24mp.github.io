@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+	#bob{
+		width: 200px;
+		height: 200px;
+		background-color: orange;
+
+
+	}
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+
+	<div id="bob"></div>
+	<script type="text/javascript">
+		
+		var box = document.getElementById('bob')
+
+		document.addEventListener(
+			"click", function(event){
+				console.log(event.clientX, event.clientY)
+				bob.style.backgroundColor = "rgb("+ event.clientX + "," +event.clientY + "," + 0 +")"
+			}
+
+			)
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<style type="text/css">
+	#yi{
+		width: 100px;
+		height: 100px;
+		border:1px solid black;
+	}
+
+
+
+</style>
+
+
+</head>
+<body>
+<script type="text/javascript">
+	var birds = [
+	"penguin",
+	"vulture",
+	"parrot",
+	"hawk",
+	"seed",
+	"nuts",
+	"fruit",
+	"fish"]
+
+	var y = document.getElementById("yi")
+y.addEventListener("click", function() {
+  var x = Math.floor(Math.random() * 8);
+  y.innerText = birds[x];
+  console.log(8);
+});
+
+
+
+
+
+</script>
+
+
+<div id="yi"></div>
+
+
+
+
+
+</body>
+</html>

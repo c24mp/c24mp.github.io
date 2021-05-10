@@ -5,32 +5,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
     <title></title>
     <style type="text/css">
-    .cloud {
-
-        display: inline-block;
-        position: relative;
-        width: 300px;
-        height: 200px;
-        /*		background-color:green;
-*/
-        background-image: url(https://assets.stickpng.com/images/580b585b2edbce24c47b263e.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        /*background-color:green;*/
 
 
 
-    }
+    #projects {
+        position: absolute;
+        left: 40%;
+        top: 43%;
+        
+        }
+   #journal {
+        position: absolute;
+        left: 49%;
+        top: 57%;
+  } 
+  #about {
+position: absolute;
+left: 62%;
+top: 64%;
 
+  }
 
-    #line {
-        width: 1265px;
-        height: 200px;
-        background-color: red;
-        position: relative;
-
-
-    }
     #link {
 
 
@@ -48,36 +43,48 @@
     a {
         color: magenta;
         text-decoration: none;
+        font-size: 25px;
+        font-family: 'Antic Slab', serif;
     }
 
 
 
+    #happy {
+        background-image: url(happy.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 80%;
+        height: 650px;
+        left: 14%;
+
+    }
+
     body {
-        background-color: lightblue;
+        background-color: rgb(100,242,254);
+        margin: 0;
     }
     </style>
 </head>
 
 <body>
+
+<div id="happy">
     <a href="projects.html">
-        <div class="cloud">
-            <div id="link">projects</div>
-        </div>
+            <div id="projects">projects</div>
     </a>
 
 
     <a href="journal.html">
-        <div class="cloud">
-            <div id="link">journal</div>
-        </div>
+            <div id="journal">journal</div>
     </a>
 
     <a href="about.html">
         <div class="cloud">
-            <div id="link">about</div>
+            <div id="about">about</div>
         </div>
     </a>
-<div id=line></div>
+</div>
 
 
 </body>

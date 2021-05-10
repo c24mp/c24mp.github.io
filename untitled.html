@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #one {
+    	background-color:red;
+    }
+
+    #two {
+    	background-color:yellow;
+    }
+
+    #three {
+    	background-color:green;
+    }
+
+    .cs {
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="cs" id="one"></div>
+    <div class="cs" id="two"></div>
+    <div class="cs" id="three"></div>
+    <script type="text/javascript">
+
+    	
+    var uno = document.getElementById("one");
+
+    uno.addEventListener("click", function(){
+    	console.log("Stop");
+        uno.style.backgroundColor = "lightblue"
+    } )
+    
+    var dos = document.getElementById("two");
+
+    dos.addEventListener("click", function(){
+        console.log("Slow");
+        dos.style.backgroundColor = "lightblue"
+    } )
+
+    var tres = document.getElementById("three");
+
+    tres.addEventListener("click", function(){
+        console.log("Go");
+        tres.style.backgroundColor = "lightblue"
+    } )
+
+    </script>
+</body>
+
+</html>

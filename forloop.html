@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+	.header{
+		text-align: center;
+		padding: 10px;
+	}
+	.cookies{
+		display: inline-block;
+		width:100px;
+		height:100px;
+		border-radius: 55%;
+		background-image: url("https://etc.usf.edu/clipart/33700/33799/nclock-03-25_33799_lg.gif");
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin: 7px;
+	}
+
+</style>
+
+</head>
+<body>
+<script type="text/javascript">
+
+// I want to decrease the margin by .25 every time the function runs but I don't know how
+	
+	var margin = 7;
+	function makeCookie (){
+	var cookie = document.createElement('div');
+	
+	cookie.classList.add('cookies');
+	document.body.appendChild(cookie);
+	margin=margin-.75;
+	cookie.style.margin = margin + "px"
+	}
+setInterval(makeCookie, 250)
+
+</script>
+<div class="header">
+	<h1> clock clock </h1>
+</div>
+
+
+</body>
+</html>
