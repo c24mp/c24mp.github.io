@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>beaver fever</title>
+
+
+<style type="text/css">
+	.lodges{
+		width: 500px;
+		height: 300px;
+		background-image: url("https://lh3.googleusercontent.com/proxy/TksFFtCaLZ4_cm17zNxXLehnOfBQUpOLAnvrTWIChMMNLUg5L1ekLWFmLpjQtvRjaNIpDrCyWKOOlYaCrBtiWbfH");
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	#lodge1{
+		position: relative;
+		left:50px;
+		top:50px;
+	}
+	#lodge2{
+		position: relative;
+		left:700px;
+		top:-250px;
+	}
+	#lodge3{
+		position: relative;
+		left:350px;
+		top:-250px;
+	}
+
+
+</style>
+
+</head>
+<body>
+
+<div id="lodge1" class="lodges"></div>
+<div id="lodge2" class="lodges"></div>
+<div id="lodge3" class="lodges"></div>
+
+
+<script type="text/javascript">
+	var one = document.getElementById("lodge1");
+	
+	one.addEventListener("click", function(){
+		var x = Math.floor(Math.random() * 3);
+		console.log (x);
+		if (x<0) {
+			console.log ("win")
+		}
+		else {
+			console.log ("lose")
+		}
+	})
+	var two = document.getElementById("lodge2");
+	
+	two.addEventListener("click", function(){
+		var x = Math.floor(Math.random() * 3);
+		console.log (x);
+	})
+	var three = document.getElementById("lodge3");
+	
+	three.addEventListener("click", function(){
+		var x = Math.floor(Math.random() * 3);
+		console.log (x);
+	})
+
+
+</script>
+
+
+</body>
+</html>
